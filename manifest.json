@@ -10,7 +10,7 @@
    {
      "matches": ["https://*.tiktok.com/*"],
      "css": ["button.css"],
-     "js": ["content-script.js"]
+     "js": ["jquery.min.js", "content-script.js"]
    }
  ],
   "permissions": ["storage", "activeTab", "scripting"],
