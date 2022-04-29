@@ -6,6 +6,13 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [
+   {
+     "matches": ["https://*.tiktok.com/*"],
+     "css": ["button.css"],
+     "js": ["content-script.js"]
+   }
+ ],
   "permissions": ["storage", "activeTab", "scripting"],
   "action": {
     "default_popup": "popup.html",
